@@ -3,8 +3,8 @@ function setup() {
 }
 
 function draw() {
-    // if second == 0, print the minute
-	background(225);
+  
+	background(240,240,240);
 
 	let red_circle_width = 40
 	let yellow_circle_width = 80
@@ -41,7 +41,14 @@ function draw() {
     let new_red_x = map(red_x, center_x, center_y, red_x - second()*5, second())
     fill(255,0,0, red_opacity); 
     red_circle = circle(new_red_x,red_y,red_circle_width)
+    if(second() == 0)
+      print_minute()
 
+}
+
+function print_minute(){
+    print("The minute is: "+minute())
+  
 }
 
 
