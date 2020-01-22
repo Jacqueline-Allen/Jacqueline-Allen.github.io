@@ -4,7 +4,7 @@ function setup() {
 
 function draw() {
   
-	background(240,240,240);
+	background(245,245,250);
 
 	let red_circle_width = 40
 	let yellow_circle_width = 80
